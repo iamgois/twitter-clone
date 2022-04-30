@@ -5,13 +5,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #15202B;
 }
 
 .container{
     display: flex;
     height: 100vh;
     width: 100vw;
+    background: #15202B;
 }
 
 /* LEFT-SIDE */
@@ -22,29 +22,74 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    border-right: 1px solid #414a52;
 }
 
 .left .logo{
-    margin-top: 20px;
-    margin-right: 110px;
+    margin-top: 10px;
+    margin-right: 180px;
 }
 
 .left .left-side-buttons{
+    margin-right: 60px;
     list-style: none;
 }
 
-.left .left-side-buttons .left-side-button{
-    margin: 15px 0;
-}
-
 .left .left-side-buttons .left-side-button .left-side-item{
+    border-radius: 30px;
+    padding: 10px;
     display: flex;
     align-items: center;
+    margin: 5px 0;
+    transition: .2s ease-in-out;
+}
+
+.left .left-side-buttons .left-side-button .left-side-item:hover{
+    background-color: #414a52;
+}
+
+.left .left-side-buttons .left-side-button .left-side-item img{
+    margin-right: 15px;
 }
 
 .left .left-side-buttons .left-side-button a{
     text-decoration: none;
     color: white;
+}
+
+.left-side-buttons .tweet-button{
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 30px;
+    position: absolute;
+    padding: 10px 70px;
+    background-color: rgb(29, 155, 240);
+    text-decoration: none;
+    color: white;
+}
+
+.profile-info{
+    font-size: 10px;
+    display: flex;
+    margin-top: 140px;
+    margin-right: 110px;
+    color: white;
+}
+
+.profile-name{
+    margin-left: 10px;
+}
+
+.profile-name p{
+    font-weight: bold;
+}
+
+.profile-name span{
+    color: #86919b;
+}
+
+.profile-info .profile-photo img{
+    border-radius: 100%;
 }
 
 /* END LEFT-SIDE */
