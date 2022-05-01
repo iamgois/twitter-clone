@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
 }
 
 .container{
@@ -66,14 +67,40 @@
     background-color: rgb(29, 155, 240);
     text-decoration: none;
     color: white;
+    transition: .2s ease-in-out;
+}
+
+.left-side-buttons .tweet-button:hover{
+    background-color: rgb(25, 136, 209);
 }
 
 .profile-info{
+    margin-top: 135px;
+    margin-right: 90px;
+}
+
+.profile-info a{
+    border-radius: 20px;
+    padding: 5px 20px;
     font-size: 10px;
-    display: flex;
-    margin-top: 140px;
-    margin-right: 110px;
+    text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.profile-info a:hover{
+    background-color: #414a52;
+}
+
+.profile-photo{
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo img{
+    border-radius: 50%;
 }
 
 .profile-name{
@@ -84,12 +111,9 @@
     font-weight: bold;
 }
 
-.profile-name span{
-    color: #86919b;
-}
-
-.profile-info .profile-photo img{
-    border-radius: 100%;
+.profile-name p span{
+    font-weight: 300;
+    color: #9aa8b4;
 }
 
 /* END LEFT-SIDE */
@@ -101,7 +125,56 @@
 .container .center{
     width: 35%;
     height: 100vh;
+    border-right: 1px solid #414a52;
 }
+
+.center p{
+    color: white;
+    position: absolute;
+    margin: 10px 10px;
+}
+
+.input-center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.input-center-left{
+    display: flex;
+}
+
+.input-center-right{
+    display: flex;
+}
+
+.input-center img{
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.input-center input[type="text"]{
+    margin-top: 50px;
+    padding: 5px 60px;
+    background: none;
+    border: none;
+}
+
+.input-center button{
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    background-color: rgb(29, 155, 240);
+}
+
+.div-input{
+    border-bottom: 1px solid #414a52;
+    padding-bottom: 40px;
+}
+
 
 /* END CENTER */
 
@@ -114,6 +187,63 @@
 .container .right{
     width: 35%;
     height: 100vh;
+    margin-left: 20px;
+}
+
+.right input[type="text"]{
+    background: #414a52;
+    border: none;
+    margin-top: 3px;
+    padding: 7px 50px;
+    border-radius: 30px;
+}
+
+.right .news{
+    background-color: #222e3a;
+    height: 400px;
+    width: 55%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.right .news h1{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.news-section{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.news-section:hover{
+    background-color: #2e3a46;
+}
+
+.news-section .trend{
+    color: #9aa8b4;
+}
+
+.news-section .tweet-count{
+    color: #9aa8b4;
+}
+
+.right .who-follow{
+    margin-top: 15px;
+    border-radius: 15px;
+    height: 300px;
+    width: 55%;
+    background-color: #222e3a;
+}
+
+.right .who-follow h1{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
 }
 
 /* END RIGHT-SIDE */
